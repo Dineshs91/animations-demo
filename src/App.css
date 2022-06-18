@@ -1,13 +1,68 @@
 .app {
-  max-width: 20rem;
+  max-width: 30rem;
   margin: 10rem auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 3rem;
+  border-radius: 1rem;
+  color: rgb(55 65 81);
+}
+
+.form-title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.user-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  padding-right: 0.5rem;
+}
+
+.item {
+  margin-top: 2rem;
 }
 
 .input-name {
   border-radius: 0.35rem;
-  border: 1px solid #dbdbdb;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  border: 1px solid #d2cfcf;
   height: 2rem;
-  width: 75%;
+  width: 96%;
+  padding-left: 1rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.input-name:focus {
+  outline-color: #6ecffb;
+  outline-width: 0.10px;
+}
+
+::placeholder {
+  color: #c4c4c4;
+}
+
+.form-control {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: end;
+}
+
+.form-control button {
+  background: white;
+  border-radius: 0.35rem;
+  border: 1px solid #a6a6a6;
+  padding: 5px;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  color: rgb(55 65 81);
+}
+
+.form-control button:focus {
+  outline-color: #33bfff;
+  outline-width: 0.5px;
+}
+
+.form-control button:hover {
+  background: #383838;
+  color: white;
+  cursor: pointer;
 }
